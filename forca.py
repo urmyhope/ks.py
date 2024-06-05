@@ -40,8 +40,25 @@ def Forca(tentativa):
     print(f7)
 
 def sorteiepalavra():
-    lista=["amor","hora","ornitorrinco","machado","ouro","martelo","puma","inseto"]
+    lista=["Amor","Hora","Fogo","Gato","Ouro","Vida","Puma","Taco"]
     return random.choice(lista)
+
+def Apresentapalavra(letras, palavra):
+    npalavra = "_ " * len(palavra)
+    for L in range(0, len(letras)):
+        print(letras[L])
+        for P in range(0,len(palavra)):
+            #print(palavra[P])
+            if letra[L]==palavra[P]:
+                print(letra[L])
+                print(P)
+                print(L)
+        
+        
+    return npalavra
+
+print(Apresentapalavra("ABX", "ABACAXI"))
+    
 
 def Continua():
     while True:
@@ -71,3 +88,14 @@ x=0
 Forca(0)
 
 print(sorteiepalavra())
+
+def Apresentapalavra(letras, palavra):
+    npalavra = "_ " * len(palavra)
+    return npalavra
+    for L in range(0, len(letras)):
+        print(letras[L])
+        
+        
+        return npalavra
+
+print(Apresentapalavra("ABX", "ABACAXI"))
