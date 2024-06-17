@@ -1,0 +1,11 @@
+listafrutas=["Maça","Banana","Coco"]
+fruta = "Maça"
+print(listafrutas[1])
+print(fruta[1])
+print(listafrutas[2][0])
+listafrutas.append("Laranja")
+print(listafrutas)
+listafrutas.remove("Coco")
+print(listafrutas)
+listafrutas.sort()
+print(listafrutas)
