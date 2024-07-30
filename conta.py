@@ -1,12 +1,6 @@
-class conta:
-    def __ini__(Self, numero, titular, saldoinicial, limite):
-        Self.numero = numero
-        Self.titular = titular
-        Self.saldo = saldoinicial
-        Self.limite = limite
-
-
-
-conta1 = conta(134, "Kauany",600.00,50.00)
-
-print(conta1)
+class Conta:
+    def __init__(self,numero,titular,saldo,limite):
+        self._numero = numero
+        self._titular = titular
+        self._saldo = saldo
+        self.limite = limite
