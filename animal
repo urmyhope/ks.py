@@ -1,0 +1,30 @@
+class Animal:
+    def speak(self):
+        raise
+
+NotImplementedError("Subclasses must implement this!")
+
+
+class Dog(Animal):
+    def speak(self):
+        return "bark"
+    
+class Cat(Animal):
+    def speak(self):
+        return "meow"
+    
+
+#Uso de polimorfismo
+
+def make_animal_speak(animal):
+    print(animal.speak())
+
+#Criando instância
+
+dog = Dog()
+cat = Cat()
+
+#Chamando a função
+
+make_animal_speak(dog)
+make_animal_speak(cat)
